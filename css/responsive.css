@@ -1,0 +1,66 @@
+/* Responsive css start */
+
+@media only screen and (max-width: 600px){
+    
+    .logo{
+        width: 100px;
+    }
+
+    nav button{
+        padding: 5px 10px;
+    }
+
+    nav .lang_btn{
+        padding: 4px 8px;
+    }
+
+    .header_content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header_content h1{
+        font-size: 30px;
+    }
+
+    .Email_Address button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .features_secton h2{
+        font-size: 30px;
+    }
+
+    .features_secton p{
+        font-size: 15px;
+    }
+
+    .row:nth-child(1), .row:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+
+    .features_secton .row{
+        padding: 10px 0;
+    }
+
+    .faq_content .content{
+        font-size: 14px;
+    }
+
+    .faq_content li label{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    label::after{
+        font-size: 22px;
+    }
+}
+
+/* Responsive css end */

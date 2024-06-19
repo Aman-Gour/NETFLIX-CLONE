@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+/* header section start */ 
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(/images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.lang_btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.lang_btn img{
+    width: 10px;
+    margin-left: 20px;
+}
+
+.header_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header_content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header_content h3{
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Email_Address{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Email_Address input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.Email_Address button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* header section end */ 
+
+/* features section start */ 
+
+.features_secton{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img_col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features_secton h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* features section end */ 
+
+/* FAQ section start */ 
+
+.FAQ{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.FAQ h2{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.faq_content{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq_content li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq_content li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.faq_content .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq_content input[type="radio"]:checked + label + .content{
+    max-height: 700px;
+    padding: 30px 20px;
+}
+
+.faq_content input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.FAQ small{
+    font-size: 10px;
+}
+
+.FAQ .Email_Address{
+    max-width: 500px;
+    margin: 20px auto 60px;
+}
+
+/* FAQ section end */ 
+
+/* Footer section start */
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis:  25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display:  block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .lang_btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Footer section end */
+
